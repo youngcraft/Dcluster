@@ -11,6 +11,8 @@ def readfile(file, dimensions = 2,sep=' '):
         1   3   2.3
         2   3   1.4
     Return (dist,xxdist,ND,N)
+    输入一个邻接矩阵表，如上所示，distance(Ai-j)=dist
+    本程序只用于处理聚类数据，需要邻接表输入
     '''
     print('Loading the file ...')
     xx = np.genfromtxt(file, delimiter=sep,names=['x','y','dist'],dtype="i8,i8,f8")
